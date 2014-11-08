@@ -1,7 +1,9 @@
 #!/usr/bin/python
-import sys, time, datetime
+import os, sys, time, datetime
 
 print "Going to deploy to [" + sys.argv[1] + "] ..."
+
+print "Using key [" + os.environ['IXCODE_ENV_KEY'] + "] ..."
 
 ts = time.time()
 
