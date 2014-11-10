@@ -8,7 +8,7 @@ ssh_keyfile = os.environ["IXCODE_SSH_KEYFILE"]
 
 print "Going to deploy to [" + environment + "] ..."
 
-call(["ssh", "-v", "-i", ssh_keyfile, ssh_login, "ls"])
+call(["ssh", "-i", ssh_keyfile, ssh_login, "ls"])
 
 ts = time.time()
 
