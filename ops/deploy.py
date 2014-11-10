@@ -1,5 +1,9 @@
 #!/usr/bin/python
-import os, sys, time, datetime
+import os
+import sys
+import time
+import datetime
+
 from subprocess import call
 
 environment = sys.argv[1]
