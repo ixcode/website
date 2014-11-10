@@ -14,7 +14,6 @@ print "Going to deploy to [" + environment + "] ..."
 
 call(["ssh", "-i", ssh_keyfile, ssh_login, "ls"])
 
-call(["pip", "freeze"])
 
 ts = time.time()
 
