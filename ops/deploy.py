@@ -14,6 +14,8 @@ print "Going to deploy to [" + environment + "] ..."
 
 call(["ssh", "-i", ssh_keyfile, ssh_login, "ls"])
 
+call(["pip", "freeze"])
+
 ts = time.time()
 
 print "[COMPLETED] @ " + datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
